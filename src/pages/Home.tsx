@@ -18,10 +18,10 @@ export default function Home() {
                     )}
                 />
             </div>
-            <div className="relative z-10 flex flex-col pt-24 pb-24">
+            <div className="relative z-10 flex flex-col gap-24 pb-24">
                 <Navbar />
                 <Hero />
-                <div className="relative w-full overflow-hidden mt-24">
+                <div className="relative w-full overflow-hidden pt-10">
                     {/* Background Lottie Animation */}
                     <div className="absolute inset-0 z-0 flex items-center justify-center opacity-60 pointer-events-none mix-blend-multiply">
                         <Lottie
