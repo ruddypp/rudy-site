@@ -19,7 +19,7 @@ const stackIcons = [
 
 export default function About() {
     return (
-        <section className="container mx-auto px-6 py-20 lg:py-32">
+        <section className="container mx-auto px-6 py-12 lg:py-16">
             <div className="flex flex-col lg:flex-row gap-8 items-start justify-center max-w-6xl mx-auto">
 
                 {/* Left Column (Ticket & Animation) */}
@@ -64,14 +64,14 @@ export default function About() {
                 <div className="w-full lg:flex-1 flex flex-col gap-6">
 
                     {/* About Content */}
-                    <div className="bg-white/90 backdrop-blur-md rounded-[32px] p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/50">
+                    <div className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/50 dark:border-white/10">
                         <div className="inline-block bg-brand-purple hover:bg-brand-purple/90 transition-colors text-white font-bold py-2.5 px-8 rounded-full mb-8 text-lg">
                             About
                         </div>
 
-                        <div className="text-brand-navy/80 text-lg leading-relaxed space-y-6 text-justify">
+                        <div className="text-brand-navy/80 dark:text-white/80 text-lg leading-relaxed space-y-6 text-justify">
                             <p>
-                                Hi!!! My name is <strong className="text-brand-navy">Rudy Paningal</strong>. I have a massive interest in Software Engineering, UI/UX Design, and Product Design.
+                                Hi!!! My name is <strong className="text-brand-navy dark:text-white">Rudy Paningal</strong>. I have a massive interest in Software Engineering, UI/UX Design, and Product Design.
                             </p>
                             <p>
                                 I am highly enthusiastic about continuously developing my skills to craft digital products and applications that are not only visually appealing but also highly functional, scalable, and comfortable for users to interact with.
@@ -83,7 +83,7 @@ export default function About() {
                     </div>
 
                     {/* Tools Content - Horizontal */}
-                    <div className="bg-white/90 backdrop-blur-md rounded-[32px] p-8 lg:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/50">
+                    <div className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-8 lg:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/50 dark:border-white/10">
                         <div className="inline-block bg-brand-purple hover:bg-brand-purple/90 transition-colors text-white font-bold py-2 px-8 rounded-full mb-6 text-lg">
                             Tools
                         </div>
@@ -91,19 +91,17 @@ export default function About() {
                         <div className="flex flex-wrap gap-4 sm:gap-6 mt-2">
                             {stackIcons.map((tool) => (
                                 <div key={tool.name} className="flex flex-col items-center group cursor-pointer">
-                                    <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center p-3 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-lg hover:-translate-y-2 hover:border-brand-purple/40 transition-all">
+                                    <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center p-3 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/10 hover:shadow-lg hover:-translate-y-2 hover:border-brand-purple/40 dark:hover:border-brand-purple/40 transition-all">
                                         <img src={tool.src} alt={tool.name} className="w-full h-full object-contain" />
                                     </div>
-                                    <p className="mt-2 text-xs font-semibold text-brand-navy/70 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <p className="mt-2 text-xs font-semibold text-brand-navy/70 dark:text-white/70 opacity-0 group-hover:opacity-100 transition-opacity">
                                         {tool.name}
                                     </p>
                                 </div>
                             ))}
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
     );
