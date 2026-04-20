@@ -1,4 +1,4 @@
-import React from 'react';
+import { RotatingBox } from '../ui/rotating-box';
 
 const experiences = [
     {
@@ -26,8 +26,17 @@ const experiences = [
 
 export default function Experience() {
     return (
-        <section className="container mx-auto px-6 py-12 lg:py-16">
-            <div className="max-w-4xl mx-auto">
+        <section className="relative container mx-auto px-6 py-12 lg:py-16">
+            {/* GSAP Rotating Boxes */}
+            <div className="absolute top-20 -left-6 lg:left-12 xl:left-32 z-0 opacity-50 md:opacity-100">
+                <RotatingBox className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-tr from-[#B98EFC] to-pink-400 dark:from-[#B98EFC]/60 dark:to-pink-500/60" />
+            </div>
+
+            <div className="absolute bottom-20 -right-6 lg:right-12 xl:right-32 z-0 opacity-50 md:opacity-100">
+                <RotatingBox className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-cyan-400 to-blue-500 dark:from-cyan-500/60 dark:to-blue-600/60" />
+            </div>
+
+            <div className="max-w-4xl mx-auto relative z-10">
                 {/* Main Card */}
                 <div className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/50 dark:border-white/10">
 
