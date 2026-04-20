@@ -1,4 +1,4 @@
-import React, { useEffect, useId, useRef, useState } from "react"
+import { useEffect, useId, useRef, useState, type SVGProps } from "react"
 import { motion } from "motion/react"
 
 import { cn } from "@/lib/utils"
@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils"
  * @param {string} [className] - Additional CSS classes to apply to the SVG container
  * @param {boolean} [glow=false] - Whether dots should have a glowing animation effect
  */
-interface DotPatternProps extends React.SVGProps<SVGSVGElement> {
+interface DotPatternProps extends SVGProps<SVGSVGElement> {
   width?: number
   height?: number
   x?: number
@@ -122,7 +122,7 @@ export function DotPattern({
           <stop offset="100%" stopColor="currentColor" stopOpacity="0" />
         </radialGradient>
       </defs>
-      {dots.map((dot, index) => (
+      {dots.map((dot) => (
         <motion.circle
           key={`${dot.x}-${dot.y}`}
           cx={dot.x}

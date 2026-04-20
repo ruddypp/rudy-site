@@ -1,4 +1,3 @@
-import React from 'react';
 import Lottie from "lottie-react";
 import rabbitAnimation from "../../assets/Remix of Rabbit Hi Without Statemachine.json";
 
