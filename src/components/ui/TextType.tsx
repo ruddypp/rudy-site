@@ -30,7 +30,6 @@ const TextType: React.FC<TextTypeProps> = ({
     cursorBlinkDuration = 0.5,
     className = ""
 }) => {
-    const allTexts = texts || text || [];
     const [displayText, setDisplayedText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -38,7 +37,7 @@ const TextType: React.FC<TextTypeProps> = ({
 
     // Use GSAP for the cursor blinking effect (as requested/expected)
     useEffect(() => {
-        let ctx = gsap.context(() => {
+        const ctx = gsap.context(() => {
             if (showCursor && cursorRef.current) {
                 gsap.to(cursorRef.current, {
                     opacity: 0,
@@ -54,6 +53,7 @@ const TextType: React.FC<TextTypeProps> = ({
 
     // Main typing logic
     useEffect(() => {
+        const allTexts = texts || text || [];
         if (allTexts.length === 0) return;
 
         let timeout: ReturnType<typeof setTimeout>;
@@ -69,8 +69,10 @@ const TextType: React.FC<TextTypeProps> = ({
 
         if (isDeleting) {
             if (displayText === "") {
-                setIsDeleting(false);
-                setCurrentIndex((prev) => (prev + 1) % allTexts.length);
+                timeout = setTimeout(() => {
+                    setIsDeleting(false);
+                    setCurrentIndex((prev) => (prev + 1) % allTexts.length);
+                }, 0);
             } else {
                 timeout = setTimeout(() => {
                     setDisplayedText(currentFullText.substring(0, Math.max(0, displayText.length - 1)));
@@ -90,7 +92,7 @@ const TextType: React.FC<TextTypeProps> = ({
 
         return () => clearTimeout(timeout);
     }, [
-        displayText, isDeleting, currentIndex, allTexts,
+        displayText, isDeleting, currentIndex, text, texts,
         typingSpeed, pauseDuration, deletingSpeed,
         variableSpeedEnabled, variableSpeedMin, variableSpeedMax
     ]);

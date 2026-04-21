@@ -88,6 +88,11 @@ export function DotPattern({
     return () => window.removeEventListener("resize", updateDimensions)
   }, [])
 
+  const getGlowTiming = (index: number) => ({
+    delay: (index % 7) * 0.35,
+    duration: 2.2 + (index % 5) * 0.45,
+  })
+
   const dots = Array.from(
     {
       length:
@@ -97,11 +102,12 @@ export function DotPattern({
     (_, i) => {
       const col = i % Math.ceil(dimensions.width / width)
       const row = Math.floor(i / Math.ceil(dimensions.width / width))
+      const timing = getGlowTiming(i)
       return {
-        x: col * width + cx,
-        y: row * height + cy,
-        delay: Math.random() * 5,
-        duration: Math.random() * 3 + 2,
+        x: col * width + x + cx,
+        y: row * height + y + cy,
+        delay: timing.delay,
+        duration: timing.duration,
       }
     }
   )

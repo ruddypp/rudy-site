@@ -1,0 +1,20 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="56" fill="#FCFCFD"/>
+  <rect x="48" y="48" width="1104" height="804" rx="44" fill="#FFF2F0"/>
+  <circle cx="958" cy="196" r="148" fill="#FBC4A5"/>
+  <rect x="108" y="108" width="300" height="54" rx="27" fill="#190E98"/>
+  <text x="148" y="144" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="28" font-weight="700">Piggy Bank</text>
+  <text x="110" y="240" fill="#19162B" font-family="Arial, sans-serif" font-size="74" font-weight="700">A cheerful saving tracker</text>
+  <text x="110" y="322" fill="#19162B" font-family="Arial, sans-serif" font-size="74" font-weight="700">for personal finance habits.</text>
+  <rect x="110" y="412" width="988" height="284" rx="40" fill="#FCFCFD"/>
+  <path d="M244 604C189 604 144 562 144 510C144 456 192 414 252 414C295 414 332 436 348 468C358 465 369 464 380 464C436 464 482 505 482 556C482 582 470 605 450 620H244V604Z" fill="#FBC4A5"/>
+  <circle cx="244" cy="516" r="10" fill="#19162B"/>
+  <rect x="182" y="578" width="210" height="18" rx="9" fill="#19162B" fill-opacity="0.1"/>
+  <rect x="598" y="452" width="188" height="24" rx="12" fill="#F0C8B4"/>
+  <rect x="598" y="496" width="276" height="18" rx="9" fill="#F7DCCE"/>
+  <rect x="598" y="530" width="228" height="18" rx="9" fill="#F7DCCE"/>
+  <rect x="598" y="564" width="256" height="18" rx="9" fill="#F7DCCE"/>
+  <rect x="598" y="618" width="168" height="38" rx="19" fill="#190E98"/>
+  <text x="644" y="643" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="20" font-weight="700">Save</text>
+  <circle cx="1038" cy="738" r="84" fill="#BEA0BC"/>
+</svg>

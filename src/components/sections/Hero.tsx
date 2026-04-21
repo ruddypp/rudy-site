@@ -1,9 +1,10 @@
 import Lottie from "lottie-react";
 import animation from "../../assets/AdQuanto.json";
 import TextType from "../ui/TextType";
+
 export default function Hero() {
     return (
-        <main className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 pt-10 md:pt-10 lg:pt-10 gap-12">
+        <main id="home" className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 pt-10 md:pt-10 lg:pt-10 gap-12">
             <div className="flex-1 flex flex-col items-center text-center lg:items-start lg:text-left">
 
                 <h1 className="w-full text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] tracking-tight text-brand-navy dark:text-white">
@@ -28,7 +29,6 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Lottie Animation Side */}
             <div className="flex-1 w-full max-w-lg lg:max-w-xl self-start lg:-mt-6 xl:-mt-10">
                 <Lottie animationData={animation} loop className="w-full h-auto drop-shadow-xl" />
             </div>

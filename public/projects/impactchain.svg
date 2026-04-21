@@ -1,0 +1,22 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="56" fill="#FCFCFD"/>
+  <rect x="48" y="48" width="1104" height="804" rx="44" fill="#EEF7F6"/>
+  <rect x="106" y="108" width="348" height="54" rx="27" fill="#19162B"/>
+  <text x="146" y="144" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="28" font-weight="700">ImpactChain DAO</text>
+  <text x="108" y="238" fill="#19162B" font-family="Arial, sans-serif" font-size="72" font-weight="700">Social impact ideas</text>
+  <text x="108" y="318" fill="#19162B" font-family="Arial, sans-serif" font-size="72" font-weight="700">translated into web3 UI.</text>
+  <circle cx="960" cy="196" r="144" fill="#7DD3C7"/>
+  <circle cx="1026" cy="244" r="82" fill="#190E98"/>
+  <rect x="110" y="414" width="978" height="276" rx="40" fill="#FCFCFD"/>
+  <rect x="146" y="450" width="410" height="202" rx="30" fill="#19162B"/>
+  <circle cx="246" cy="550" r="58" fill="#7DD3C7"/>
+  <circle cx="350" cy="550" r="58" fill="#FBC4A5"/>
+  <circle cx="454" cy="550" r="58" fill="#FCFCFD" fill-opacity="0.22"/>
+  <rect x="608" y="456" width="172" height="24" rx="12" fill="#C7EAE5"/>
+  <rect x="608" y="500" width="254" height="18" rx="9" fill="#DCF5F1"/>
+  <rect x="608" y="534" width="208" height="18" rx="9" fill="#DCF5F1"/>
+  <rect x="608" y="568" width="248" height="18" rx="9" fill="#DCF5F1"/>
+  <rect x="608" y="620" width="172" height="38" rx="19" fill="#19162B"/>
+  <text x="650" y="645" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="20" font-weight="700">Govern</text>
+  <circle cx="1028" cy="736" r="88" fill="#BEA0BC"/>
+</svg>

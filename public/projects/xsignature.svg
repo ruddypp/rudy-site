@@ -1,0 +1,25 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="56" fill="#FCFCFD"/>
+  <rect x="44" y="44" width="1112" height="812" rx="44" fill="#EEF1FF"/>
+  <circle cx="974" cy="198" r="148" fill="#FBC4A5"/>
+  <circle cx="898" cy="250" r="94" fill="#5863D8" fill-opacity="0.22"/>
+  <rect x="110" y="112" width="420" height="54" rx="27" fill="#190E98"/>
+  <text x="146" y="148" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="28" font-weight="700">XSignature Backend</text>
+  <text x="112" y="238" fill="#19162B" font-family="Arial, sans-serif" font-size="72" font-weight="700">API for booking, service</text>
+  <text x="112" y="320" fill="#19162B" font-family="Arial, sans-serif" font-size="72" font-weight="700">and payment workflows.</text>
+  <rect x="112" y="420" width="436" height="230" rx="34" fill="#FCFCFD"/>
+  <rect x="144" y="458" width="230" height="22" rx="11" fill="#BEC6FF"/>
+  <rect x="144" y="504" width="362" height="16" rx="8" fill="#D7DCF8"/>
+  <rect x="144" y="534" width="298" height="16" rx="8" fill="#D7DCF8"/>
+  <rect x="144" y="584" width="126" height="34" rx="17" fill="#190E98"/>
+  <text x="182" y="608" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="18" font-weight="700">JWT</text>
+  <rect x="286" y="584" width="162" height="34" rx="17" fill="#FBC4A5"/>
+  <text x="326" y="608" fill="#19162B" font-family="Arial, sans-serif" font-size="18" font-weight="700">Midtrans</text>
+  <rect x="640" y="398" width="432" height="282" rx="38" fill="#190E98"/>
+  <rect x="680" y="446" width="352" height="28" rx="14" fill="#FCFCFD" fill-opacity="0.22"/>
+  <rect x="680" y="496" width="280" height="24" rx="12" fill="#FCFCFD" fill-opacity="0.84"/>
+  <rect x="680" y="540" width="232" height="24" rx="12" fill="#FCFCFD" fill-opacity="0.6"/>
+  <rect x="680" y="594" width="148" height="42" rx="21" fill="#FBC4A5"/>
+  <text x="734" y="622" fill="#19162B" font-family="Arial, sans-serif" font-size="22" font-weight="700">POST</text>
+  <circle cx="1036" cy="706" r="82" fill="#BEA0BC"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="56" fill="#FCFCFD"/>
+  <rect x="48" y="48" width="1104" height="804" rx="44" fill="#EEF8FF"/>
+  <rect x="106" y="108" width="420" height="54" rx="27" fill="#190E98"/>
+  <text x="146" y="144" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="28" font-weight="700">E-Ensiklopedia Budaya</text>
+  <text x="108" y="238" fill="#19162B" font-family="Arial, sans-serif" font-size="70" font-weight="700">Interactive learning for</text>
+  <text x="108" y="316" fill="#19162B" font-family="Arial, sans-serif" font-size="70" font-weight="700">science and local culture.</text>
+  <circle cx="936" cy="214" r="148" fill="#9FD7FF"/>
+  <circle cx="996" cy="166" r="82" fill="#FBC4A5"/>
+  <rect x="110" y="410" width="454" height="268" rx="36" fill="#FCFCFD"/>
+  <rect x="144" y="444" width="152" height="184" rx="26" fill="#190E98"/>
+  <rect x="320" y="454" width="198" height="22" rx="11" fill="#B8DBF3"/>
+  <rect x="320" y="496" width="156" height="18" rx="9" fill="#D7ECF9"/>
+  <rect x="320" y="530" width="174" height="18" rx="9" fill="#D7ECF9"/>
+  <rect x="320" y="576" width="134" height="38" rx="19" fill="#FBC4A5"/>
+  <text x="356" y="601" fill="#19162B" font-family="Arial, sans-serif" font-size="19" font-weight="700">Quiz</text>
+  <rect x="652" y="408" width="396" height="272" rx="36" fill="#190E98"/>
+  <circle cx="770" cy="500" r="56" fill="#FCFCFD" fill-opacity="0.18"/>
+  <path d="M742 552C742 516.654 770.654 488 806 488H930V600H790C763.49 600 742 578.51 742 552Z" fill="#FCFCFD"/>
+  <circle cx="970" cy="728" r="92" fill="#BEA0BC"/>
+</svg>

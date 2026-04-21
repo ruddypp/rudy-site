@@ -1,0 +1,25 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="56" fill="#FCFCFD"/>
+  <rect x="54" y="54" width="1092" height="792" rx="40" fill="#FFF4ED"/>
+  <rect x="110" y="110" width="356" height="54" rx="27" fill="#19162B"/>
+  <text x="150" y="146" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="28" font-weight="700">Absensia App</text>
+  <text x="112" y="244" fill="#19162B" font-family="Arial, sans-serif" font-size="74" font-weight="700">Attendance system with</text>
+  <text x="112" y="326" fill="#19162B" font-family="Arial, sans-serif" font-size="74" font-weight="700">a warm admin dashboard.</text>
+  <rect x="112" y="410" width="510" height="286" rx="34" fill="#FCFCFD"/>
+  <rect x="146" y="446" width="214" height="144" rx="24" fill="#FBC4A5"/>
+  <rect x="386" y="446" width="202" height="28" rx="14" fill="#D7B39D"/>
+  <rect x="386" y="494" width="160" height="18" rx="9" fill="#E9D6C8"/>
+  <rect x="386" y="528" width="188" height="18" rx="9" fill="#E9D6C8"/>
+  <rect x="386" y="562" width="144" height="18" rx="9" fill="#E9D6C8"/>
+  <rect x="386" y="612" width="124" height="38" rx="19" fill="#19162B"/>
+  <text x="430" y="637" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="20" font-weight="700">Track</text>
+  <circle cx="930" cy="236" r="152" fill="#5863D8"/>
+  <circle cx="930" cy="236" r="86" fill="#FCFCFD" fill-opacity="0.18"/>
+  <rect x="728" y="414" width="314" height="232" rx="34" fill="#19162B"/>
+  <rect x="764" y="454" width="128" height="128" rx="28" fill="#FCFCFD" fill-opacity="0.12"/>
+  <rect x="918" y="466" width="88" height="18" rx="9" fill="#FCFCFD" fill-opacity="0.42"/>
+  <rect x="918" y="502" width="74" height="18" rx="9" fill="#FCFCFD" fill-opacity="0.78"/>
+  <rect x="918" y="538" width="96" height="18" rx="9" fill="#FCFCFD" fill-opacity="0.52"/>
+  <path d="M804 518L835 550L891 482" stroke="#FBC4A5" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="980" cy="726" r="96" fill="#BEA0BC"/>
+</svg>

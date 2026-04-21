@@ -1,0 +1,24 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="56" fill="#FCFCFD"/>
+  <rect x="46" y="46" width="1108" height="808" rx="44" fill="#F0F6FF"/>
+  <rect x="108" y="108" width="410" height="54" rx="27" fill="#5863D8"/>
+  <text x="146" y="144" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="28" font-weight="700">RS Citra Medika Queue</text>
+  <text x="110" y="238" fill="#19162B" font-family="Arial, sans-serif" font-size="68" font-weight="700">Hospital queue flow</text>
+  <text x="110" y="314" fill="#19162B" font-family="Arial, sans-serif" font-size="68" font-weight="700">designed for speed and order.</text>
+  <circle cx="968" cy="198" r="146" fill="#BFD7FF"/>
+  <circle cx="968" cy="198" r="90" fill="#5863D8"/>
+  <path d="M968 150V246" stroke="#FCFCFD" stroke-width="24" stroke-linecap="round"/>
+  <path d="M920 198H1016" stroke="#FCFCFD" stroke-width="24" stroke-linecap="round"/>
+  <rect x="110" y="412" width="990" height="284" rx="40" fill="#FCFCFD"/>
+  <rect x="146" y="448" width="334" height="212" rx="30" fill="#5863D8"/>
+  <rect x="194" y="498" width="238" height="16" rx="8" fill="#FCFCFD" fill-opacity="0.5"/>
+  <rect x="194" y="534" width="184" height="58" rx="18" fill="#FCFCFD"/>
+  <text x="256" y="572" fill="#5863D8" font-family="Arial, sans-serif" font-size="38" font-weight="700">A-012</text>
+  <rect x="566" y="456" width="204" height="24" rx="12" fill="#C1D4F9"/>
+  <rect x="566" y="500" width="292" height="18" rx="9" fill="#DCE7FB"/>
+  <rect x="566" y="534" width="248" height="18" rx="9" fill="#DCE7FB"/>
+  <rect x="566" y="568" width="188" height="18" rx="9" fill="#DCE7FB"/>
+  <rect x="566" y="620" width="188" height="38" rx="19" fill="#5863D8"/>
+  <text x="620" y="645" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="20" font-weight="700">Queue</text>
+  <circle cx="1038" cy="736" r="88" fill="#BEA0BC"/>
+</svg>

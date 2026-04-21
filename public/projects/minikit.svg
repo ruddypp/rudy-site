@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="56" fill="#FCFCFD"/>
+  <rect x="46" y="46" width="1108" height="808" rx="44" fill="#F4F3FF"/>
+  <circle cx="972" cy="202" r="148" fill="#5863D8"/>
+  <rect x="106" y="108" width="328" height="54" rx="27" fill="#19162B"/>
+  <text x="146" y="144" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="28" font-weight="700">Minikit Base</text>
+  <text x="108" y="238" fill="#19162B" font-family="Arial, sans-serif" font-size="74" font-weight="700">Onchain experiments</text>
+  <text x="108" y="320" fill="#19162B" font-family="Arial, sans-serif" font-size="74" font-weight="700">built for modern products.</text>
+  <rect x="108" y="414" width="984" height="278" rx="40" fill="#FCFCFD"/>
+  <rect x="144" y="448" width="444" height="210" rx="30" fill="#19162B"/>
+  <circle cx="238" cy="550" r="74" fill="#5863D8"/>
+  <circle cx="314" cy="550" r="74" fill="#FBC4A5"/>
+  <circle cx="390" cy="550" r="74" fill="#FCFCFD" fill-opacity="0.25"/>
+  <rect x="634" y="458" width="192" height="24" rx="12" fill="#CFCBFF"/>
+  <rect x="634" y="502" width="250" height="18" rx="9" fill="#E4E1FF"/>
+  <rect x="634" y="536" width="210" height="18" rx="9" fill="#E4E1FF"/>
+  <rect x="634" y="570" width="174" height="18" rx="9" fill="#E4E1FF"/>
+  <rect x="634" y="620" width="164" height="38" rx="19" fill="#5863D8"/>
+  <text x="680" y="645" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="20" font-weight="700">Base</text>
+  <circle cx="1038" cy="730" r="86" fill="#BEA0BC"/>
+</svg>

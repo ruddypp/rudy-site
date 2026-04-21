@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="56" fill="#FCFCFD"/>
+  <rect x="42" y="42" width="1116" height="816" rx="44" fill="#F2F4FF"/>
+  <circle cx="954" cy="198" r="144" fill="#190E98"/>
+  <circle cx="954" cy="198" r="92" fill="#FBC4A5"/>
+  <rect x="104" y="108" width="382" height="54" rx="27" fill="#5863D8"/>
+  <text x="142" y="144" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="28" font-weight="700">Rinciin Mockup</text>
+  <text x="106" y="242" fill="#19162B" font-family="Arial, sans-serif" font-size="74" font-weight="700">Story-led product pages</text>
+  <text x="106" y="324" fill="#19162B" font-family="Arial, sans-serif" font-size="74" font-weight="700">with a polished promo feel.</text>
+  <rect x="106" y="410" width="990" height="276" rx="40" fill="#FCFCFD"/>
+  <rect x="146" y="450" width="414" height="196" rx="28" fill="#F6D8C6"/>
+  <rect x="596" y="450" width="188" height="24" rx="12" fill="#BEC6FF"/>
+  <rect x="596" y="492" width="280" height="18" rx="9" fill="#DDE3FF"/>
+  <rect x="596" y="526" width="240" height="18" rx="9" fill="#DDE3FF"/>
+  <rect x="596" y="560" width="298" height="18" rx="9" fill="#DDE3FF"/>
+  <rect x="596" y="612" width="172" height="38" rx="19" fill="#190E98"/>
+  <text x="644" y="637" fill="#FCFCFD" font-family="Arial, sans-serif" font-size="20" font-weight="700">Launch</text>
+  <circle cx="242" cy="548" r="64" fill="#FCFCFD" fill-opacity="0.56"/>
+  <rect x="212" y="514" width="60" height="68" rx="20" fill="#5863D8"/>
+  <circle cx="1052" cy="744" r="88" fill="#BEA0BC"/>
+</svg>

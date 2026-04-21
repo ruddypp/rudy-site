@@ -26,8 +26,7 @@ const experiences = [
 
 export default function Experience() {
     return (
-        <section className="relative container mx-auto px-6 py-12 lg:py-16">
-            {/* GSAP Rotating Boxes */}
+        <section id="experience" className="relative container mx-auto px-6 py-7 lg:py-9">
             <div className="absolute top-20 -left-6 lg:left-12 xl:left-32 z-0 opacity-50 md:opacity-100">
                 <RotatingBox className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-tr from-[#B98EFC] to-pink-400 dark:from-[#B98EFC]/60 dark:to-pink-500/60" />
             </div>
@@ -36,51 +35,53 @@ export default function Experience() {
                 <RotatingBox className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-br from-cyan-400 to-blue-500 dark:from-cyan-500/60 dark:to-blue-600/60" />
             </div>
 
-            <div className="max-w-4xl mx-auto relative z-10">
-                {/* Main Card */}
-                <div className="bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/50 dark:border-white/10">
-
-                    {/* Badge */}
-                    <div className="inline-block bg-[#B98EFC] text-white font-bold py-2 px-6 rounded-full mb-10 text-lg">
+            <div className="max-w-5xl mx-auto relative z-10">
+                <div className="relative overflow-hidden bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-6 lg:p-10 border border-white/50 dark:border-white/10">
+                    <img
+                        src="/decor/starburst.svg"
+                        alt=""
+                        aria-hidden="true"
+                        className="pointer-events-none absolute right-5 top-5 hidden w-16 opacity-80 lg:block"
+                    />
+                    <img
+                        src="/decor/dot-swoosh.svg"
+                        alt=""
+                        aria-hidden="true"
+                        className="pointer-events-none absolute bottom-5 left-6 hidden w-28 opacity-65 xl:block"
+                    />
+                    <div className="inline-block bg-[#B98EFC] text-white font-bold py-2 px-6 rounded-full text-base">
                         Experience
                     </div>
 
-                    {/* Experience List */}
-                    <div className="flex flex-col">
-                        {experiences.map((exp, index) => (
-                            <div key={exp.id} className="flex flex-col">
-                                {/* Inside Item */}
-                                <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-2 lg:gap-8">
+                    <div className="relative z-10 mt-6 flex flex-col gap-4">
+                        {experiences.map((exp) => (
+                            <div key={exp.id} className="rounded-[26px] border border-brand-purple/10 bg-[#fcfbff] dark:bg-slate-950/60 p-5 sm:p-6">
+                                <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[170px_1fr] lg:gap-6">
+                                    <div className="flex flex-col gap-3">
+                                        <span className="w-fit rounded-full bg-brand-purple/10 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-brand-purple">
+                                            {exp.date}
+                                        </span>
+                                        <div className="hidden lg:block h-full w-px bg-brand-purple/15 ml-4"></div>
+                                    </div>
+
                                     <div className="flex-1">
                                         <h3 className="text-xl lg:text-2xl font-bold text-brand-navy dark:text-white">
                                             {exp.role}
                                         </h3>
-                                        <p className="text-lg text-brand-navy/70 dark:text-white/70 mt-1 font-medium">
+                                        <p className="mt-1 text-base lg:text-lg text-brand-purple font-semibold">
                                             {exp.company}
                                         </p>
-                                    </div>
-                                    <div className="lg:text-right mt-1 lg:mt-0 shrink-0">
-                                        <span className="text-brand-navy/60 dark:text-white/60 font-medium">
-                                            {exp.date}
-                                        </span>
+
+                                        {exp.description && (
+                                            <p className="mt-4 text-sm lg:text-base text-brand-navy/80 dark:text-white/80 leading-7">
+                                                {exp.description}
+                                            </p>
+                                        )}
                                     </div>
                                 </div>
-
-                                {/* Description */}
-                                {exp.description && (
-                                    <p className="mt-4 text-brand-navy/80 dark:text-white/80 leading-relaxed text-justify">
-                                        {exp.description}
-                                    </p>
-                                )}
-
-                                {/* Divider (except for the last item) */}
-                                {index !== experiences.length - 1 && (
-                                    <hr className="border-gray-200 dark:border-slate-700/50 my-8" />
-                                )}
                             </div>
                         ))}
                     </div>
-
                 </div>
             </div>
         </section>
