@@ -58,9 +58,6 @@ export default function Projects() {
               >
                 <div className="flex h-full flex-col overflow-hidden rounded-[26px] border border-brand-purple/10 bg-[#faf7ff] dark:bg-slate-950/60">
                   <div className="relative overflow-hidden border-b border-brand-purple/10">
-                    <div className="absolute left-4 top-4 z-10 rounded-full bg-white/80 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-brand-purple backdrop-blur-sm dark:bg-slate-900/80">
-                      Case Study
-                    </div>
                     <img
                       src={
                         projectDecor[
@@ -78,7 +75,7 @@ export default function Projects() {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="h-[200px] w-full object-cover sm:h-[220px]"
+                      className="aspect-[12/5] w-full object-cover"
                     />
                   </div>
 

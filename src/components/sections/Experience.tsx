@@ -3,20 +3,27 @@ import { RotatingBox } from '../ui/rotating-box';
 const experiences = [
     {
         id: 1,
+        role: "Web Developer Intern – Technical SEO",
+        company: "Daiki Media Malaysia",
+        date: "Jun 2026 - Present",
+        description: "Implement technical SEO directly on client websites, including metadata, canonicals, redirects, sitemaps, robots rules, structured data, internal-link safeguards, and automated verification. Translate SEO implementation sheets into production-ready web changes and audit fixes with a developer-first approach."
+    },
+    {
+        id: 2,
         role: "Full Stack Developer",
         company: "Freelance - Self Employed",
         date: "Jun 2025 - Present",
         description: "Developed more than 5 full-stack web applications. Handled both frontend and backend development, including database design, API integration, authentication, and basic deployment. Worked directly with clients to understand requirements and deliver functional, user-friendly web applications."
     },
     {
-        id: 2,
+        id: 3,
         role: "Full Stack Developer",
         company: "PT. Paramata Baraya Internasional",
         date: "Mar 2025 - Dec 2025",
         description: "Designed and developed a full-stack Equipment Inventory and Maintenance Management System to improve asset monitoring and maintenance efficiency. Built features such as inventory tracking, rental management, maintenance and calibration scheduling, automated notifications, role-based access control, activity logging, and user management. Structured the application with scalable architecture using Next.js, integrated APIs, managed authentication, and optimized database interactions to ensure performance and reliability."
     },
     {
-        id: 3,
+        id: 4,
         role: "Teaching Assistant Programming Java",
         company: "Universitas Pamulang",
         date: "Apr 2024 - Jul 2024",

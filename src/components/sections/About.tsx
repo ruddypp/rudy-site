@@ -73,13 +73,13 @@ export default function About() {
 
                         <div className="text-brand-navy/80 dark:text-white/80 text-lg leading-relaxed space-y-6 text-justify">
                             <p>
-                                Hi!!! My name is <strong className="text-brand-navy dark:text-white">Rudy Paningal</strong>. I have interest in Software Engineering such as Web Development, Desktop Development, System Design, DevOps, and Web3.
+                                Hi, I&apos;m <strong className="text-brand-navy dark:text-white">Rudy Paningal</strong>, a full-stack web developer based in Indonesia. I build business systems, company profiles, and SEO-focused content platforms. I&apos;m currently focusing on backend development and keep an interest in Web3.
                             </p>
                             <p>
-                                I am highly enthusiastic about continuously developing my skills to craft digital products and applications that are not only visually appealing but also highly functional, scalable, for users to interact with.
+                                At Daiki Media, I work on the technical side of SEO: implementing metadata, canonicals, redirects, sitemaps, robots rules, structured data, and automated checks that help websites stay clear and consistent as they grow.
                             </p>
                             <p>
-     I am always exicted to learn new things and face various challenges in the dynamic world of technology and design.
+                                Outside my internship, I work freelance on web apps, mobile applications, and desktop applications—from requirements through database design, APIs, authentication, and deployment. I enjoy the overlap between product engineering and discoverability—making sites easier to use, easier to maintain, and easier for search engines to understand.
                             </p>
                         </div>
                     </div>
