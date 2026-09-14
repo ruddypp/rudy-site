@@ -5,7 +5,7 @@ const experiences = [
         id: 1,
         role: "Web Developer Intern – Technical SEO",
         company: "Daiki Media Malaysia",
-        date: "Jun 2026 - Present",
+        date: "Jun 2026 - Sep 2026",
         description: "Implement technical SEO directly on client websites, including metadata, canonicals, redirects, sitemaps, robots rules, structured data, internal-link safeguards, and automated verification. Translate SEO implementation sheets into production-ready web changes and audit fixes with a developer-first approach."
     },
     {
