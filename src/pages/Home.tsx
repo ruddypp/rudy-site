@@ -12,31 +12,38 @@ import { SmoothCursor } from "@/components/ui/smooth-cursor"
 import Seo, { SITE_URL } from "../components/seo/Seo";
 import { caseStudies } from "../data/caseStudies";
 
+const person = {
+    "@type": "Person",
+    "@id": `${SITE_URL}/#person`,
+    name: "Rudy Paningal",
+    url: `${SITE_URL}/`,
+    image: `${SITE_URL}/images/rudyy.webp`,
+    jobTitle: "Full Stack Developer & Technical SEO Specialist",
+    description:
+        "Full stack developer and technical SEO specialist building business systems, company profiles, and search-led content platforms.",
+    email: "mailto:paningalrudy@gmail.com",
+    knowsAbout: [
+        "Full Stack Web Development",
+        "Technical SEO",
+        "Laravel",
+        "React",
+        "Next.js",
+        "TypeScript",
+    ],
+    sameAs: [
+        "https://github.com/ruddypp",
+        "https://linkedin.com/in/rudypaningal",
+        "https://instagram.com/ruddypp",
+    ],
+};
+
+// Google requires ProfilePage.mainEntity to be the Person or Organization the
+// page is about; `about` is valid schema.org but does not satisfy that rule,
+// and the item is rejected without it. The Person is defined inline here and
+// referenced by @id elsewhere, so it exists exactly once.
 const homeJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
-        {
-            "@type": "Person",
-            "@id": `${SITE_URL}/#person`,
-            name: "Rudy Paningal",
-            url: `${SITE_URL}/`,
-            image: `${SITE_URL}/images/rudyy.webp`,
-            jobTitle: "Full Stack Developer & Technical SEO Specialist",
-            email: "mailto:paningalrudy@gmail.com",
-            knowsAbout: [
-                "Full Stack Web Development",
-                "Technical SEO",
-                "Laravel",
-                "React",
-                "Next.js",
-                "TypeScript",
-            ],
-            sameAs: [
-                "https://github.com/ruddypp",
-                "https://linkedin.com/in/rudypaningal",
-                "https://instagram.com/ruddypp",
-            ],
-        },
         {
             "@type": "WebSite",
             "@id": `${SITE_URL}/#website`,
@@ -53,7 +60,7 @@ const homeJsonLd = {
             url: `${SITE_URL}/`,
             name: "Rudy Paningal — Full Stack Developer & Technical SEO",
             isPartOf: { "@id": `${SITE_URL}/#website` },
-            about: { "@id": `${SITE_URL}/#person` },
+            mainEntity: person,
             inLanguage: "en",
             hasPart: caseStudies.map((study) => ({
                 "@type": "Article",
