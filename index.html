@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline' https://fonts.gstatic.com https://www.googletagmanager.com;">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com;">
     <meta name="author" content="Rudy Paningal" />
     <meta name="theme-color" content="#B98EFC" />
 
@@ -14,10 +14,10 @@
     <link rel="preload" as="image" href="/images/hero-poster.webp" fetchpriority="high" />
     <link rel="preload" as="fetch" href="/lottie/hero.json" crossorigin />
 
-    <!-- Google Fonts: Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Poppins is self-hosted: the Google Fonts stylesheet was render-blocking
+         and cost two extra DNS + TLS round trips before any text could paint. -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-400-latin.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/poppins-700-latin.woff2" crossorigin />
   </head>
   <body>
     <div id="root"></div>
