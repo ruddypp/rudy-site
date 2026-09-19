@@ -41,7 +41,7 @@ export const projects: ProjectItem[] = [
       "Industrial company profile and CMS for wiremesh, conveyor, and custom fabrication, with product, media, client, and enquiry management.",
     stack: ["Laravel", "PHP", "Blade", "Tailwind CSS", "Alpine.js"],
     image: "/projects/indomesh-cipta-pratama-home.webp",
-    href: "https://mediumaquamarine-chicken-310684.hostingersite.com/",
+    href: "https://indomeshciptapratama.com/",
     kind: "Live Preview",
   },
   {

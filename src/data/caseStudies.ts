@@ -153,6 +153,50 @@ export const caseStudies: CaseStudy[] = [
     results: [],
   },
   {
+    slug: 'indomesh-cipta-pratama',
+    project: 'Indomesh Cipta Pratama',
+    metaTitle: 'Indomesh Cipta Pratama — Industrial Catalogue on Laravel',
+    metaDescription:
+      'A 14-page industrial catalogue for a wire mesh conveyor manufacturer, built on Laravel with eight spec-driven product pages and a CMS the client runs themselves.',
+    summary:
+      'Indomesh Cipta Pratama is a 14-page industrial catalogue for an Indonesian manufacturer of wire mesh conveyors, roller chains, sprockets, and related transmission parts. Built on Laravel with a purpose-made CMS, it gives each of the eight product lines its own specification-led page rather than collapsing the catalogue into a single products list.',
+    role: 'Full stack development',
+    year: '2025',
+    sections: [
+      {
+        heading: 'What industrial buyers actually search for',
+        body: [
+          'Buyers in this category do not search for the company. They search for the part and the material: a wire mesh conveyor belt in SS304, a stainless roller chain, a specific sprocket. The company name enters the search only after the part has been found somewhere.',
+          'That makes a single products page the wrong shape. It forces eight distinct searches onto one URL, where each product gets a paragraph and none gets a page that can rank for or fully answer its own query.',
+        ],
+      },
+      {
+        heading: 'One page per product line',
+        body: [
+          'Each of the eight product lines has its own page: wire mesh conveyor, wire mesh chain conveyor, roller chain in stainless steel, table top chain, trolley chain, gear and sprocket, coupling and pulley, and gear box.',
+          'These are not stub pages. A product page runs to roughly 700 words and is organised the way a buyer evaluates: what the part is for, which working environments it suits, which processes it fits, the main specifications, and the weave variants worth considering — balanced weave, compound balanced, and so on. It closes by moving from requirement to production rather than with a generic contact prompt.',
+          'The page titles carry the same specificity, naming the material grades a buyer types, so the search result matches the search.',
+        ],
+      },
+      {
+        heading: 'A CMS scoped to the business',
+        body: [
+          'Industrial catalogues move. Specifications get revised, variants get added, client references grow. When every edit needs a developer, the edits stop happening, and a catalogue that drifts out of date stops matching what buyers search for.',
+          'So I built a CMS covering exactly what this business needs: products, media, client references, and enquiries. Constraining the scope is the point — an admin interface learnable in one sitting is one that actually gets used. Products are stored as structured records with specifications in defined fields rather than as free text, which keeps eight product pages consistent and lets each one present its details in a predictable place.',
+          'The supporting pages — about, clients, media, contact — are part of the same system, so the whole site stays under the client\u2019s control rather than only the parts that were easy to make editable.',
+        ],
+      },
+      {
+        heading: 'Delivered as HTML, not as an app',
+        body: [
+          'Laravel renders the catalogue server-side with Blade templates, so every product page arrives as complete HTML. For a supplier whose buyers arrive by searching part names, a catalogue that only materialises after JavaScript runs is a catalogue that risks not being indexed at all.',
+          'Each product page carries structured data describing the product, and all 14 URLs are declared in a sitemap at the site root alongside a robots file. Alpine.js supplies the small amount of interactivity the admin panel needs without pulling in a framework, and Tailwind CSS handles the design system.',
+        ],
+      },
+    ],
+    results: [],
+  },
+  {
     slug: 'cms-company-profile',
     project: 'CMS Company Profile',
     metaTitle: 'CMS Company Profile — Custom CMS for a Commodity Supplier',

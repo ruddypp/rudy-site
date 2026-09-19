@@ -1,3 +1,4 @@
+import ContactForm from "./ContactForm";
 import { trackEvent } from "../../lib/analytics";
 import { ArrowUpRight, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
@@ -62,14 +63,7 @@ export default function Contact() {
               <p className="mt-4 max-w-md text-white/85 leading-relaxed">
                 Reach me through social media, GitHub, LinkedIn, or send an email directly.
               </p>
-              <a
-                href="mailto:paningalrudy@gmail.com"
-                onClick={() => trackEvent("generate_lead", { method: "email" })}
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-brand-navy transition-all hover:bg-gray-100"
-              >
-                Email Me Directly
-                <ArrowUpRight className="h-4 w-4" />
-              </a>
+              <ContactForm />
             </div>
 
             <div className="divide-y divide-brand-purple/10 overflow-hidden rounded-[24px] border border-brand-purple/10 bg-[#faf7ff] dark:bg-slate-950/60">
