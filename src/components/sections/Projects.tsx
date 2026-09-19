@@ -30,7 +30,7 @@ export default function Projects() {
     >
       <div className="max-w-6xl mx-auto">
         <div className="relative bg-white/88 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-6 lg:p-10 border border-white/50 dark:border-white/10">
-          <img
+          <img loading="lazy"
             src="/decor/plus-cluster.svg"
             alt=""
             aria-hidden="true"
@@ -60,7 +60,7 @@ export default function Projects() {
               >
                 <div className="flex h-full flex-col overflow-hidden rounded-[26px] border border-brand-purple/10 bg-[#faf7ff] dark:bg-slate-950/60">
                   <div className="relative overflow-hidden border-b border-brand-purple/10">
-                    <img
+                    <img loading="lazy"
                       src={
                         projectDecor[
                           (((currentPage - 1) * projectsPerPage) + index) % projectDecor.length
@@ -74,7 +74,7 @@ export default function Projects() {
                           : "right-4 top-12 w-16 sm:w-20"
                       }`}
                     />
-                    <img
+                    <img loading="lazy"
                       src={project.image}
                       alt={project.title}
                       className="aspect-[12/5] w-full object-cover"

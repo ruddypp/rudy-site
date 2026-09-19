@@ -8,6 +8,10 @@
     <meta name="author" content="Rudy Paningal" />
     <meta name="theme-color" content="#B98EFC" />
 
+    <!-- The hero animation is the LCP element; start fetching it alongside the
+         bundle instead of after React has mounted. -->
+    <link rel="preload" as="fetch" href="/lottie/hero.json" crossorigin />
+
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -44,13 +44,13 @@ export default function Experience() {
 
             <div className="max-w-5xl mx-auto relative z-10">
                 <div className="relative overflow-hidden bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-6 lg:p-10 border border-white/50 dark:border-white/10">
-                    <img
+                    <img loading="lazy"
                         src="/decor/starburst.svg"
                         alt=""
                         aria-hidden="true"
                         className="pointer-events-none absolute right-5 top-5 hidden w-16 opacity-80 lg:block"
                     />
-                    <img
+                    <img loading="lazy"
                         src="/decor/dot-swoosh.svg"
                         alt=""
                         aria-hidden="true"

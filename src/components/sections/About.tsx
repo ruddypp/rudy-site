@@ -37,7 +37,7 @@ export default function About() {
                         </svg>
 
                         <div className="relative w-[280px] mt-2 mb-4 z-10 flex justify-center">
-                            <img src="/images/rudyy.webp" alt="Rudy Paningal" width={962} height={1280} className="w-[85%] h-auto max-h-[300px] object-cover object-bottom" />
+                            <img loading="lazy" src="/images/rudyy.webp" alt="Rudy Paningal" width={962} height={1280} className="w-[85%] h-auto max-h-[300px] object-cover object-bottom" />
                         </div>
 
                         <div className="w-full bg-white/30 border-2 border-white/40 text-white font-bold py-3 px-6 rounded-3xl shadow-sm z-10 text-center text-lg">
@@ -54,13 +54,13 @@ export default function About() {
 
                 <div className="w-full lg:flex-1 flex flex-col gap-6">
                     <div className="relative overflow-hidden bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-8 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/50 dark:border-white/10">
-                        <img
+                        <img loading="lazy"
                             src="/decor/dot-swoosh.svg"
                             alt=""
                             aria-hidden="true"
                             className="pointer-events-none absolute right-6 top-6 hidden w-32 opacity-75 lg:block"
                         />
-                        <img
+                        <img loading="lazy"
                             src="/decor/orbit-ring.svg"
                             alt=""
                             aria-hidden="true"
@@ -87,13 +87,13 @@ export default function About() {
                     </div>
 
                     <div className="relative overflow-hidden bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-8 lg:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/50 dark:border-white/10">
-                        <img
+                        <img loading="lazy"
                             src="/decor/pill-stack.svg"
                             alt=""
                             aria-hidden="true"
                             className="pointer-events-none absolute right-5 top-5 hidden w-20 opacity-80 lg:block"
                         />
-                        <img
+                        <img loading="lazy"
                             src="/decor/spark-wave.svg"
                             alt=""
                             aria-hidden="true"
@@ -107,7 +107,7 @@ export default function About() {
                             {stackIcons.map((tool) => (
                                 <div key={tool.name} className="flex flex-col items-center group cursor-pointer">
                                     <div className="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center p-3 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/10 hover:shadow-lg hover:-translate-y-2 hover:border-brand-purple/40 dark:hover:border-brand-purple/40 transition-all">
-                                        <img src={tool.src} alt={tool.name} className="w-full h-full object-contain" />
+                                        <img loading="lazy" src={tool.src} alt={tool.name} className="w-full h-full object-contain" />
                                     </div>
                                     <p className="mt-2 text-xs font-semibold text-brand-navy/70 dark:text-white/70 opacity-0 group-hover:opacity-100 transition-opacity">
                                         {tool.name}

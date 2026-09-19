@@ -44,7 +44,7 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="relative bg-white/90 dark:bg-slate-900/80 backdrop-blur-md rounded-[32px] p-6 lg:p-10 border border-white/50 dark:border-white/10"
         >
-          <img
+          <img loading="lazy"
             src="/decor/spark-wave.svg"
             alt=""
             aria-hidden="true"
