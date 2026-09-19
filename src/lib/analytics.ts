@@ -31,3 +31,12 @@ export function initAnalytics() {
   gtag('js', new Date())
   gtag('config', MEASUREMENT_ID)
 }
+
+/**
+ * Sends a GA4 event. No-op when gtag was never loaded (dev, localhost, or a
+ * blocked request), so call sites never need to guard.
+ */
+export function trackEvent(name: string, params: Record<string, unknown> = {}) {
+  if (typeof window === 'undefined' || !Array.isArray(window.dataLayer)) return
+  window.dataLayer.push(['event', name, params])
+}

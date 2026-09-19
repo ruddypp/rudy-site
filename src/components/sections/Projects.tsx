@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { caseStudies } from "../../data/caseStudies";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -104,15 +106,25 @@ export default function Projects() {
                       ))}
                     </div>
 
-                    <a
-                      href={project.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-brand-navy px-5 py-3 text-sm font-bold text-white transition-all hover:bg-brand-black dark:bg-white dark:text-brand-navy dark:hover:bg-gray-200"
-                    >
-                      View Project
-                      <ArrowUpRight className="h-4 w-4" />
-                    </a>
+                    <div className="mt-6 flex flex-wrap items-center gap-3">
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex w-fit items-center gap-2 rounded-full bg-brand-navy px-5 py-3 text-sm font-bold text-white transition-all hover:bg-brand-black dark:bg-white dark:text-brand-navy dark:hover:bg-gray-200"
+                      >
+                        View Project
+                        <ArrowUpRight className="h-4 w-4" />
+                      </a>
+                      {caseStudies.some((study) => study.project === project.title) ? (
+                        <Link
+                          to={`/projects/${caseStudies.find((study) => study.project === project.title)!.slug}`}
+                          className="inline-flex w-fit items-center gap-2 rounded-full border-2 border-brand-purple px-5 py-3 text-sm font-bold text-brand-purple transition-colors hover:bg-brand-purple hover:text-white"
+                        >
+                          Read case study
+                        </Link>
+                      ) : null}
+                    </div>
                   </div>
                 </div>
               </motion.article>

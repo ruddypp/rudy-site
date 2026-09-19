@@ -1,3 +1,4 @@
+import { trackEvent } from "../../lib/analytics";
 import { ArrowUpRight, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -63,6 +64,7 @@ export default function Contact() {
               </p>
               <a
                 href="mailto:paningalrudy@gmail.com"
+                onClick={() => trackEvent("generate_lead", { method: "email" })}
                 className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-brand-navy transition-all hover:bg-gray-100"
               >
                 Email Me Directly
@@ -80,6 +82,12 @@ export default function Contact() {
                     href={item.href}
                     target={item.href.startsWith("mailto:") ? undefined : "_blank"}
                     rel={item.href.startsWith("mailto:") ? undefined : "noreferrer"}
+                    onClick={() =>
+                      trackEvent(
+                        item.href.startsWith("mailto:") ? "generate_lead" : "contact_click",
+                        { method: item.label },
+                      )
+                    }
                     className="group flex items-center justify-between gap-4 p-5 transition-colors hover:bg-brand-purple/5"
                   >
                     <div className="flex items-center gap-4">

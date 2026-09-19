@@ -1,5 +1,4 @@
-import Lottie from "lottie-react";
-import animation from "../../assets/AdQuanto.json";
+import LazyLottie from "../ui/LazyLottie";
 import TextType from "../ui/TextType";
 
 export default function Hero() {
@@ -30,7 +29,7 @@ export default function Hero() {
             </div>
 
             <div className="flex-1 w-full max-w-lg lg:max-w-xl self-start lg:-mt-6 xl:-mt-10">
-                <Lottie animationData={animation} loop className="w-full h-auto drop-shadow-xl" />
+                <LazyLottie src="/lottie/hero.json" loop className="w-full h-auto drop-shadow-xl" />
             </div>
         </main>
     );

@@ -1,5 +1,4 @@
-import Lottie from "lottie-react";
-import rabbitAnimation from "../../assets/Remix of Rabbit Hi Without Statemachine.json";
+import LazyLottie from "../ui/LazyLottie";
 
 const stackIcons = [
     { name: 'Laravel', src: '/stack/laravel.svg' },
@@ -38,7 +37,7 @@ export default function About() {
                         </svg>
 
                         <div className="relative w-[280px] mt-2 mb-4 z-10 flex justify-center">
-                            <img src="/images/rudyy.png" alt="Rudy Paningal" className="w-[85%] h-auto max-h-[300px] object-cover object-bottom" />
+                            <img src="/images/rudyy.webp" alt="Rudy Paningal" className="w-[85%] h-auto max-h-[300px] object-cover object-bottom" />
                         </div>
 
                         <div className="w-full bg-white/30 border-2 border-white/40 text-white font-bold py-3 px-6 rounded-3xl shadow-sm z-10 text-center text-lg">
@@ -49,7 +48,7 @@ export default function About() {
                     </div>
 
                     <div className="hidden lg:flex w-full justify-center items-center -translate-x-8">
-                        <Lottie animationData={rabbitAnimation} loop className="w-64 h-auto opacity-90 drop-shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer" />
+                        <LazyLottie src="/lottie/rabbit.json" loop className="w-64 h-auto opacity-90 drop-shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer" />
                     </div>
                 </div>
 
@@ -67,9 +66,9 @@ export default function About() {
                             aria-hidden="true"
                             className="pointer-events-none absolute bottom-5 right-6 hidden w-16 opacity-80 xl:block"
                         />
-                        <div className="inline-block bg-brand-purple hover:bg-brand-purple/90 transition-colors text-white font-bold py-2.5 px-8 rounded-full mb-8 text-lg">
+                        <h2 className="inline-block bg-brand-purple hover:bg-brand-purple/90 transition-colors text-white font-bold py-2.5 px-8 rounded-full mb-8 text-lg">
                             About
-                        </div>
+                        </h2>
 
                         <div className="text-brand-navy/80 dark:text-white/80 text-lg leading-relaxed space-y-6 text-justify">
                             <p>
@@ -77,6 +76,12 @@ export default function About() {
                             </p>
                             <p>
                                 I work freelance on web apps, mobile applications, and desktop applications—from requirements through database design, APIs, authentication, and deployment. I enjoy the overlap between product engineering and discoverability—making sites easier to use, easier to maintain, and easier for search engines to understand.
+                            </p>
+                            <p>
+                                That overlap is most of what I do. A site can be well built and still invisible, usually because its content only exists after JavaScript runs, or because every search a customer might make lands on the same page. Both are architecture problems, not content problems, and both are cheaper to solve before launch than after.
+                            </p>
+                            <p>
+                                So the work usually starts with the questions people actually type, and the site structure follows from there—one page per intent, each one answering its question completely. For a clinic that meant separating treatment, cost, and compliance pages. For a multi-location spa it meant keeping service pages and location pages apart so neither cannibalises the other. For a commodity supplier it meant a catalogue the client can update without a developer, because a catalogue nobody updates stops matching what buyers search for.
                             </p>
                         </div>
                     </div>
@@ -94,9 +99,9 @@ export default function About() {
                             aria-hidden="true"
                             className="pointer-events-none absolute -bottom-3 right-8 hidden w-28 opacity-60 xl:block"
                         />
-                        <div className="inline-block bg-brand-purple hover:bg-brand-purple/90 transition-colors text-white font-bold py-2 px-8 rounded-full mb-6 text-lg">
+                        <h2 className="inline-block bg-brand-purple hover:bg-brand-purple/90 transition-colors text-white font-bold py-2 px-8 rounded-full mb-6 text-lg">
                             Tools
-                        </div>
+                        </h2>
 
                         <div className="relative z-10 flex flex-wrap gap-4 sm:gap-6 mt-2">
                             {stackIcons.map((tool) => (

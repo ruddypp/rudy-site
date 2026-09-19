@@ -56,9 +56,9 @@ export default function Experience() {
                         aria-hidden="true"
                         className="pointer-events-none absolute bottom-5 left-6 hidden w-28 opacity-65 xl:block"
                     />
-                    <div className="inline-block bg-[#B98EFC] text-white font-bold py-2 px-6 rounded-full text-base">
+                    <h2 className="inline-block bg-[#B98EFC] text-white font-bold py-2 px-6 rounded-full text-base">
                         Experience
-                    </div>
+                    </h2>
 
                     <div className="relative z-10 mt-6 flex flex-col gap-4">
                         {experiences.map((exp) => (

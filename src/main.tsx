@@ -1,19 +1,17 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import { ViteReactSSG } from 'vite-react-ssg'
+import { routes } from './routes'
 import { initAnalytics } from './lib/analytics'
 
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.documentElement.classList.add('dark')
-} else {
-  document.documentElement.classList.remove('dark')
+function applyStoredTheme() {
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const isDark = localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark)
+  document.documentElement.classList.toggle('dark', isDark)
 }
 
-initAnalytics()
-
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+export const createRoot = ViteReactSSG({ routes }, ({ isClient }) => {
+  // Both touch browser-only APIs, so they must not run during prerendering.
+  if (!isClient) return
+  applyStoredTheme()
+  initAnalytics()
+})
