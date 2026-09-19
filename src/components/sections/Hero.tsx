@@ -29,7 +29,14 @@ export default function Hero() {
             </div>
 
             <div className="flex-1 w-full max-w-lg lg:max-w-xl self-start lg:-mt-6 xl:-mt-10">
-                <LazyLottie src="/lottie/hero.json" width={925} height={635} loop className="w-full h-auto drop-shadow-xl" />
+                <LazyLottie
+                    src="/lottie/hero.json"
+                    width={925}
+                    height={635}
+                    poster="/images/hero-poster.webp"
+                    loop
+                    className="w-full h-auto drop-shadow-xl"
+                />
             </div>
         </main>
     );

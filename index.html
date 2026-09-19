@@ -8,8 +8,10 @@
     <meta name="author" content="Rudy Paningal" />
     <meta name="theme-color" content="#B98EFC" />
 
-    <!-- The hero animation is the LCP element; start fetching it alongside the
-         bundle instead of after React has mounted. -->
+    <!-- The hero poster is the LCP element: a still frame that paints with the
+         HTML, so the largest paint no longer waits on the animation chain.
+         The animation itself is fetched in parallel and fades in over it. -->
+    <link rel="preload" as="image" href="/images/hero-poster.webp" fetchpriority="high" />
     <link rel="preload" as="fetch" href="/lottie/hero.json" crossorigin />
 
     <!-- Google Fonts: Poppins -->
