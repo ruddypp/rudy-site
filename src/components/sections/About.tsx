@@ -37,7 +37,7 @@ export default function About() {
                         </svg>
 
                         <div className="relative w-[280px] mt-2 mb-4 z-10 flex justify-center">
-                            <img src="/images/rudyy.webp" alt="Rudy Paningal" className="w-[85%] h-auto max-h-[300px] object-cover object-bottom" />
+                            <img src="/images/rudyy.webp" alt="Rudy Paningal" width={962} height={1280} className="w-[85%] h-auto max-h-[300px] object-cover object-bottom" />
                         </div>
 
                         <div className="w-full bg-white/30 border-2 border-white/40 text-white font-bold py-3 px-6 rounded-3xl shadow-sm z-10 text-center text-lg">
@@ -48,7 +48,7 @@ export default function About() {
                     </div>
 
                     <div className="hidden lg:flex w-full justify-center items-center -translate-x-8">
-                        <LazyLottie src="/lottie/rabbit.json" loop className="w-64 h-auto opacity-90 drop-shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer" />
+                        <LazyLottie src="/lottie/rabbit.json" width={500} height={600} loop className="w-64 h-auto opacity-90 drop-shadow-xl hover:scale-105 transition-transform duration-500 cursor-pointer" />
                     </div>
                 </div>
 

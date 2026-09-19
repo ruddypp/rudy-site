@@ -89,6 +89,8 @@ export default function Home() {
                     <div className="absolute inset-0 z-0 flex items-center justify-center opacity-60 pointer-events-none mix-blend-multiply">
                         <LazyLottie
                             src="/lottie/bubbles.json"
+                            width={1080}
+                            height={1920}
                             loop
                             className="w-full h-full object-cover"
                         />
