@@ -13,7 +13,10 @@
   --font-sans: "Poppins", sans-serif;
 }
 
-* {
+/* Only hide the real cursor while the custom one is actually mounted. As a
+   blanket rule this left every visitor without a cursor whenever the script
+   did not run — no JS, a failed chunk, or a touch device. */
+.custom-cursor * {
   cursor: none !important;
 }
 

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import gsap from 'gsap';
 
 interface TextTypeProps {
     text?: string[];
@@ -37,8 +36,15 @@ const TextType: React.FC<TextTypeProps> = ({
 
     // Use GSAP for the cursor blinking effect (as requested/expected)
     useEffect(() => {
-        const ctx = gsap.context(() => {
-            if (showCursor && cursorRef.current) {
+        if (!showCursor) return;
+
+        let cancelled = false;
+        let ctx: { revert: () => void } | undefined;
+
+        // Loaded on demand: the cursor blink is not worth blocking first paint.
+        import('gsap').then(({ default: gsap }) => {
+            if (cancelled || !cursorRef.current) return;
+            ctx = gsap.context(() => {
                 gsap.to(cursorRef.current, {
                     opacity: 0,
                     ease: "power2.inOut",
@@ -46,9 +52,13 @@ const TextType: React.FC<TextTypeProps> = ({
                     yoyo: true,
                     duration: cursorBlinkDuration
                 });
-            }
+            });
         });
-        return () => ctx.revert();
+
+        return () => {
+            cancelled = true;
+            ctx?.revert();
+        };
     }, [showCursor, cursorBlinkDuration]);
 
     // Main typing logic

@@ -1,9 +1,5 @@
 import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { cn } from '../../lib/utils';
-
-gsap.registerPlugin(ScrollTrigger);
 
 interface RotatingBoxProps {
     className?: string;
@@ -12,23 +8,37 @@ interface RotatingBoxProps {
 export function RotatingBox({ className }: RotatingBoxProps) {
     const boxRef = useRef<HTMLDivElement>(null);
 
+    // GSAP is loaded on demand so it stays out of the initial bundle; the box
+    // itself is server-rendered either way, only the scroll animation waits.
     useEffect(() => {
         if (!boxRef.current) return;
 
-        const ctx = gsap.context(() => {
-            gsap.to(boxRef.current, {
-                rotation: 360,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: boxRef.current,
-                    start: "top bottom",
-                    end: "bottom top",
-                    scrub: 0.5,
-                }
-            });
-        }, boxRef);
+        let cancelled = false;
+        let ctx: { revert: () => void } | undefined;
 
-        return () => ctx.revert();
+        Promise.all([import('gsap'), import('gsap/ScrollTrigger')]).then(
+            ([{ default: gsap }, { ScrollTrigger }]) => {
+                if (cancelled || !boxRef.current) return;
+                gsap.registerPlugin(ScrollTrigger);
+                ctx = gsap.context(() => {
+                    gsap.to(boxRef.current, {
+                        rotation: 360,
+                        ease: "none",
+                        scrollTrigger: {
+                            trigger: boxRef.current,
+                            start: "top bottom",
+                            end: "bottom top",
+                            scrub: 0.5,
+                        }
+                    });
+                }, boxRef);
+            },
+        );
+
+        return () => {
+            cancelled = true;
+            ctx?.revert();
+        };
     }, []);
 
     return (

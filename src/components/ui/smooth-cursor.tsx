@@ -164,12 +164,12 @@ export function SmoothCursor({
       })
     }
 
-    document.body.style.cursor = "none"
+    document.documentElement.classList.add("custom-cursor")
     window.addEventListener("mousemove", throttledMouseMove)
 
     return () => {
       window.removeEventListener("mousemove", throttledMouseMove)
-      document.body.style.cursor = "auto"
+      document.documentElement.classList.remove("custom-cursor")
       if (rafId) cancelAnimationFrame(rafId)
     }
   }, [cursorX, cursorY, rotation, scale])

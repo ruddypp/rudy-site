@@ -8,7 +8,7 @@ import Footer from '../components/ui/Footer';
 import { DotPattern } from "../components/ui/dot-pattern";
 import { cn } from "../lib/utils";
 import LazyLottie from "../components/ui/LazyLottie";
-import { SmoothCursor } from "@/components/ui/smooth-cursor"
+import PointerCursor from "../components/ui/PointerCursor";
 import Seo, { SITE_URL } from "../components/seo/Seo";
 import { caseStudies } from "../data/caseStudies";
 
@@ -80,7 +80,7 @@ export default function Home() {
                 path="/"
                 jsonLd={homeJsonLd}
             />
-            <SmoothCursor />
+            <PointerCursor />
             <div className="fixed inset-0 z-0 pointer-events-none">
                 <DotPattern
                     className={cn(
