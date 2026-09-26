@@ -6,6 +6,17 @@ declare global {
   }
 }
 
+/**
+ * gtag.js only runs commands pushed as a real `arguments` object. A plain
+ * array (what rest params or `push(['event', ...])` produce) is read as a
+ * data-layer method call and dropped without an error, so no config and no
+ * events would ever reach GA4.
+ */
+const gtag: (...args: unknown[]) => void = function () {
+  // eslint-disable-next-line prefer-rest-params
+  window.dataLayer.push(arguments)
+}
+
 function isLocalHost() {
   const { hostname } = window.location
   return hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '[::1]'
@@ -25,9 +36,6 @@ export function initAnalytics() {
   document.head.appendChild(script)
 
   window.dataLayer = window.dataLayer || []
-  function gtag(...args: unknown[]) {
-    window.dataLayer.push(args)
-  }
   gtag('js', new Date())
   gtag('config', MEASUREMENT_ID)
 }
@@ -38,5 +46,5 @@ export function initAnalytics() {
  */
 export function trackEvent(name: string, params: Record<string, unknown> = {}) {
   if (typeof window === 'undefined' || !Array.isArray(window.dataLayer)) return
-  window.dataLayer.push(['event', name, params])
+  gtag('event', name, params)
 }
