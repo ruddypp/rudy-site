@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react'
+import { useRef, useState, type FormEvent } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 import { trackEvent } from '../../lib/analytics'
 
@@ -14,10 +14,21 @@ const RECIPIENT = 'paningalrudy@gmail.com'
  */
 export default function ContactForm() {
   const [sent, setSent] = useState(false)
+  const leadTracked = useRef(false)
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    const data = new FormData(event.currentTarget)
+    const form = event.currentTarget
+
+    // `required` accepts a field of only spaces. Trim first and re-check, so a
+    // blank enquiry is stopped with the browser's own message and never counts
+    // as a lead.
+    for (const field of form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input, textarea')) {
+      field.value = field.value.trim()
+    }
+    if (!form.reportValidity()) return
+
+    const data = new FormData(form)
     const name = String(data.get('name') ?? '').trim()
     const email = String(data.get('email') ?? '').trim()
     const message = String(data.get('message') ?? '').trim()
@@ -25,7 +36,11 @@ export default function ContactForm() {
     const subject = `Project enquiry from ${name || 'the website'}`
     const body = `${message}\n\n—\n${name}\n${email}`
 
-    trackEvent('generate_lead', { method: 'contact_form' })
+    // One lead per page view: resubmitting the same enquiry is not a new lead.
+    if (!leadTracked.current) {
+      trackEvent('generate_lead', { method: 'contact_form' })
+      leadTracked.current = true
+    }
     window.location.href = `mailto:${RECIPIENT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     setSent(true)
   }

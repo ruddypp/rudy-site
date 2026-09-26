@@ -1,3 +1,5 @@
+import { trackEvent } from "../../lib/analytics";
+
 export default function Footer() {
     return (
         <footer className="container mx-auto px-6 pt-4 pb-10 lg:pb-14">
@@ -13,7 +15,11 @@ export default function Footer() {
                         <a href="#home" className="transition-colors hover:text-brand-purple">Home</a>
                         <a href="#projects" className="transition-colors hover:text-brand-purple">Projects</a>
                         <a href="#contact" className="transition-colors hover:text-brand-purple">Contact</a>
-                        <a href="mailto:paningalrudy@gmail.com" className="transition-colors hover:text-brand-purple">
+                        <a
+                            href="mailto:paningalrudy@gmail.com"
+                            onClick={() => trackEvent("contact_click", { method: "email" })}
+                            className="transition-colors hover:text-brand-purple"
+                        >
                             paningalrudy@gmail.com
                         </a>
                     </div>

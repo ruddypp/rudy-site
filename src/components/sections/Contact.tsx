@@ -6,24 +6,28 @@ import { motion } from "framer-motion";
 const contacts = [
   {
     label: "Instagram",
+    method: "instagram",
     value: "@ruddypp",
     href: "https://instagram.com/ruddypp",
     icon: Instagram,
   },
   {
     label: "LinkedIn",
+    method: "linkedin",
     value: "Rudy Paningal",
     href: "https://linkedin.com/in/rudypaningal",
     icon: Linkedin,
   },
   {
     label: "GitHub",
+    method: "github",
     value: "ruddypp",
     href: "https://github.com/ruddypp",
     icon: Github,
   },
   {
     label: "Email",
+    method: "email",
     value: "paningalrudy@gmail.com",
     href: "mailto:paningalrudy@gmail.com",
     icon: Mail,
@@ -76,12 +80,7 @@ export default function Contact() {
                     href={item.href}
                     target={item.href.startsWith("mailto:") ? undefined : "_blank"}
                     rel={item.href.startsWith("mailto:") ? undefined : "noreferrer"}
-                    onClick={() =>
-                      trackEvent(
-                        item.href.startsWith("mailto:") ? "generate_lead" : "contact_click",
-                        { method: item.label },
-                      )
-                    }
+                    onClick={() => trackEvent("contact_click", { method: item.method })}
                     className="group flex items-center justify-between gap-4 p-5 transition-colors hover:bg-brand-purple/5"
                   >
                     <div className="flex items-center gap-4">
